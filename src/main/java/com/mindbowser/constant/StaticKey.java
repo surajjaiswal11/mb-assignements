@@ -15,7 +15,7 @@ public class StaticKey {
 	public static final String TOTAL_RECORD = "totalRecords";
 	public static final String AUTHORIZATION = "Authorization";
 	public static final String FIRST_NAME = "firstName";
-	public static final String LAST_NAME = "firstName";
+	public static final String LAST_NAME = "lastName";
 	public static final String EMPLOYEE = "employee";
 	public static final String DYNAMIC_TEMPLATE_DATA = "dynamic_template_data";
 	public static final String CRON_EXPRESSION = "0 0 21 * * ?";
