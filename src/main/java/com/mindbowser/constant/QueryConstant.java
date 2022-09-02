@@ -1,0 +1,19 @@
+package com.mindbowser.constant;
+
+public class QueryConstant {
+
+	private QueryConstant() {
+	}
+
+	public static final String SELECT = "SELECT ";
+	public static final String STAR = " * ";
+	public static final String COUNT = " COUNT(*) ";
+	public static final String FROM = " FROM deomdb.employee where ";
+	public static final String CURRENT_DATE = " DATE(created_at) = CURDATE() ";
+	public static final String IS_DELETED_AND_ADDED_BY_AND_ORDER_BY_ID_DESC = " is_deleted =?2 and added_by =?1 order by id desc ";
+	public static final String LIMIT = " LIMIT ?3,?4";
+	public static final String AND = " and ";
+
+	
+
+}
