@@ -27,7 +27,7 @@ public class StaticKey {
 	public static final String ADDRESS = "Address";
 	public static final String EMAIL = "Email";
 	public static final String COMPANY_NAME = "companyName";
-	public static final String PASSWORD_IS_MANDATORY = "Password is mandatory";
+	public static final String PASS_IS_MANDATORY = "Pass is mandatory";
 	public static final String MOBILE_NUMBER_IS_REQUIRED = "Mobile number is required";
 
 }

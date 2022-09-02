@@ -16,7 +16,6 @@ import com.mindbowser.constant.ExceptionConstant;
 import com.mindbowser.exception.CustomException;
 import com.mindbowser.service.AWSS3BucketService;
 
-
 @Service
 public class AWSS3BucketServiceImpl implements AWSS3BucketService {
 
@@ -52,8 +51,8 @@ public class AWSS3BucketServiceImpl implements AWSS3BucketService {
 			} catch (AmazonClientException clientException) {
 				throw new CustomException(clientException.getMessage());
 			}
-		} else
+		} else {
 			throw new CustomException(environment.getProperty(ExceptionConstant.FILE_NOT_FOUND));
-
+		}
 	}
 }

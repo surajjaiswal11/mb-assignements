@@ -116,7 +116,8 @@ public class EmployeeServiceImpl implements EmployeeService {
 	private Employee getCurrentLoggedUser(Employee employee) {
 		Authentication auth = SecurityContextHolder.getContext().getAuthentication();
 		Optional<Manager> manager = managerRepo.findByEmailAndIsDeleted(auth.getName(), false);
-		employee.setManager(manager.get());
+		if (manager.isPresent())
+			employee.setManager(manager.get());
 		return employee;
 	}
 
