@@ -54,7 +54,7 @@ public class EmployeeModel extends BaseModel {
 	@Size(min = 3, message = StaticKey.ADDRESS + StaticKey.SHOULD_BE_AT_LEAST_THREE_CHAR)
 	private String address;
 
-	@NotBlank(message = "mobileNumber is required")
+	@NotBlank(message = StaticKey.MOBILE_NUMBER_IS_REQUIRED)
 	@Size(min = 10, max = 10)
 	@Pattern(regexp = "(^$|[0-9]{10})")
 	private String mobile;

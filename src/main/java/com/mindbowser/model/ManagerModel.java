@@ -49,7 +49,7 @@ public class ManagerModel extends BaseModel {
 	@Size(min = 3, message = StaticKey.ADDRESS + StaticKey.SHOULD_BE_AT_LEAST_THREE_CHAR)
 	private String address;
 
-	@NotBlank(message = "Password is mandatory")
+	@NotBlank(message = StaticKey.PASSWORD_IS_MANDATORY)
 	private String password;
 
 	private Set<RoleModel> roles;
